@@ -6,6 +6,8 @@ import (
 	"github.com/go-ping/ping"
 	"log"
 	"net"
+	"os"
+	"os/signal"
 	"strings"
 	"time"
 )
@@ -76,12 +78,6 @@ func main() {
 		//	fmt.Printf("%d bytes from %s: icmp_seq=%d time=%v\n", pkt.Nbytes, pkt.IPAddr, pkt.Seq, pkt.Rtt)
 		//}
 
-		pinger.OnFinish = func(stats *ping.Statistics) {
-			fmt.Printf("\n--- %s stping statistics ---\n", stats.Addr)
-			fmt.Printf("%d packets transmitted, %d packets received, %v%% packet loss\n", stats.PacketsSent, stats.PacketsRecv, stats.PacketLoss)
-			fmt.Printf("round-trip min/avg/max/stddev = %v/%v/%v/%v\n", stats.MinRtt, stats.AvgRtt, stats.MaxRtt, stats.StdDevRtt)
-		}
-
 		// Start a new pinger goroutine
 		go func() {
 			err = pinger.Run()
@@ -91,17 +87,23 @@ func main() {
 		}()
 	}
 
+	// Listen for Ctrl-C
+	c := make(chan os.Signal, 1)
+	signal.Notify(c, os.Interrupt)
+	go func() {
+		for range c {
+			for _, pinger := range pingers {
+				fmt.Printf("\n--- %s stping statistics source %s ---\n", pinger.Statistics().Addr, pinger.Source)
+				fmt.Printf("%d packets transmitted, %d packets received, %v%% packet loss\n", pinger.Statistics().PacketsSent, pinger.Statistics().PacketsRecv, pinger.Statistics().PacketLoss)
+				fmt.Printf("round-trip min/avg/max/stddev = %v/%v/%v/%v\n", pinger.Statistics().MinRtt, pinger.Statistics().AvgRtt, pinger.Statistics().MaxRtt, pinger.Statistics().StdDevRtt)
+				pinger.Stop()
+			}
+
+			os.Exit(0)
+		}
+	}()
+
 	fmt.Printf("STPING %s (%s) from %d sources:\n", *target, targetIp, len(pingers))
-
-	//// Listen for Ctrl-C
-	//c := make(chan os.Signal, 1)
-	//signal.Notify(c, os.Interrupt)
-	//for _, pinger := range table {
-	//	for range c {
-	//		pinger.Stop()
-	//	}
-	//}
-
 	fmt.Printf("%s  Sent  Loss  Min        Max        Avg\n", ("Source" + strings.Repeat(" ", longestSourceAddress))[:longestSourceAddress])
 	for {
 		for _, pinger := range pingers {
@@ -112,4 +114,5 @@ func main() {
 		}
 		time.Sleep(time.Second)
 	}
+
 }

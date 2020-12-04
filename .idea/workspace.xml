@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f594b4c6-e6c0-4051-9f95-886de8baaf9f" name="Default Changelist" comment="add binary to gitignore">
+      <change beforePath="$PROJECT_DIR$/stping.go" beforeDir="false" afterPath="$PROJECT_DIR$/stping.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/sdk/go" />
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lAeLa8l2nSQ2PisAPm9piqmqtS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/mount" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f594b4c6-e6c0-4051-9f95-886de8baaf9f" name="Default Changelist" comment="" />
+      <created>1607044267921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607044267921</updated>
+      <workItem from="1607044269083" duration="9147000" />
+      <workItem from="1607058718800" duration="852000" />
+      <workItem from="1607059677050" duration="7444000" />
+      <workItem from="1607112396260" duration="43000" />
+      <workItem from="1607114889948" duration="1148000" />
+      <workItem from="1607116399075" duration="1190000" />
+      <workItem from="1607117925094" duration="1194000" />
+    </task>
+    <task id="LOCAL-00001" summary="init repo">
+      <created>1607116463045</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607116463045</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init repo">
+      <created>1607116499422</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607116499422</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add binary to gitignore">
+      <created>1607117830291</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607117830291</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init repo" />
+    <MESSAGE value="add binary to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add binary to gitignore" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1051" y="671" key="#GOROOT" timestamp="1607044296091">
+      <screen x="0" y="34" width="2560" height="1406" />
+    </state>
+    <state x="1051" y="671" key="#GOROOT/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607044296091" />
+    <state x="1051" y="574" width="400" height="325" key="#Go_Modules" timestamp="1607044378958">
+      <screen x="0" y="34" width="2560" height="1406" />
+    </state>
+    <state x="1051" y="574" width="400" height="325" key="#Go_Modules/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607044378958" />
+    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2" timestamp="1607117834864">
+      <screen x="0" y="34" width="2560" height="1406" />
+    </state>
+    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607117834864" />
+    <state x="3303" y="472" width="424" height="482" key="FileChooserDialogImpl" timestamp="1607059570218">
+      <screen x="2560" y="174" width="1920" height="1080" />
+    </state>
+    <state x="3303" y="472" width="424" height="482" key="FileChooserDialogImpl/0.34.2560.1406/2560.174.1920.1080@2560.174.1920.1080" timestamp="1607059570218" />
+    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1607117929451">
+      <screen x="0" y="34" width="2560" height="1406" />
+    </state>
+    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607117929451" />
+    <state x="1419" y="650" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607117836740">
+      <screen x="0" y="34" width="2560" height="1406" />
+    </state>
+    <state x="1419" y="650" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607117836740" />
+    <state x="1444" y="577" width="402" height="317" key="git4idea.ui.GitTagDialog" timestamp="1607117859333">
+      <screen x="0" y="34" width="2560" height="1406" />
+    </state>
+    <state x="1444" y="577" width="402" height="317" key="git4idea.ui.GitTagDialog/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607117859333" />
+    <state x="944" y="346" key="run.anything.popup" timestamp="1607054693148">
+      <screen x="0" y="34" width="2560" height="1406" />
+    </state>
+    <state x="944" y="346" key="run.anything.popup/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607054693148" />
+    <state x="993" y="422" width="672" height="678" key="search.everywhere.popup" timestamp="1607117857563">
+      <screen x="0" y="34" width="2560" height="1406" />
+    </state>
+    <state x="993" y="422" width="672" height="678" key="search.everywhere.popup/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607117857563" />
+  </component>
+</project>
