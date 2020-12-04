@@ -12,6 +12,8 @@ import (
 	"time"
 )
 
+var release = "devel" // Set by the build process
+
 var (
 	sources = flag.String("sources", "", "Comma separated list of source IP addresses")
 	target  = flag.String("target", "", "Target hostname to ping")
@@ -19,6 +21,16 @@ var (
 
 func main() {
 	flag.Parse()
+
+	flag.Usage = func() {
+		fmt.Printf("Usage for stping (%s) https://github.com/natesales/stping:\n", release)
+		flag.PrintDefaults()
+	}
+
+	if *sources == "" || *target == "" {
+		flag.Usage()
+		os.Exit(1)
+	}
 
 	fmt.Printf("Resolving %s...", *target)
 	targetHostRecords, err := net.LookupIP(*target)
@@ -114,5 +126,4 @@ func main() {
 		}
 		time.Sleep(time.Second)
 	}
-
 }
