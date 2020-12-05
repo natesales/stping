@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f594b4c6-e6c0-4051-9f95-886de8baaf9f" name="Default Changelist" comment="fix packet loss spacing">
+    <list default="true" id="f594b4c6-e6c0-4051-9f95-886de8baaf9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stping.go" beforeDir="false" afterPath="$PROJECT_DIR$/stping.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
       <workItem from="1607112396260" duration="43000" />
       <workItem from="1607114889948" duration="1148000" />
       <workItem from="1607116399075" duration="1190000" />
-      <workItem from="1607117925094" duration="4753000" />
+      <workItem from="1607117925094" duration="6485000" />
     </task>
     <task id="LOCAL-00001" summary="init repo">
       <created>1607116463045</created>
@@ -97,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607121190417</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix packet loss spacing">
+      <created>1607125271144</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607125271144</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +115,8 @@
     <MESSAGE value="add ctrl+c exit condition" />
     <MESSAGE value="add flag documentation" />
     <MESSAGE value="fix output whitespace" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix output whitespace" />
+    <MESSAGE value="fix packet loss spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix packet loss spacing" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -123,10 +130,10 @@
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
     <state x="1051" y="574" width="400" height="325" key="#Go_Modules/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607044378958" />
-    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2" timestamp="1607125157131">
+    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2" timestamp="1607125271098">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
-    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607125157131" />
+    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607125271098" />
     <state x="3303" y="472" width="424" height="482" key="FileChooserDialogImpl" timestamp="1607059570218">
       <screen x="2560" y="174" width="1920" height="1080" />
     </state>

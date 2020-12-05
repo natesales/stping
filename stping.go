@@ -116,12 +116,12 @@ func main() {
 	}()
 
 	fmt.Printf("STPING %s (%s) from %d sources:\n", *target, targetIp, len(pingers))
-	fmt.Printf("%s  Sent     Loss  Min       Max       Avg\n", ("Source" + strings.Repeat(" ", longestSourceAddress))[:longestSourceAddress])
+	fmt.Printf("%s  Sent     Loss  Min       Max       Avg       Dev\n", ("Source" + strings.Repeat(" ", longestSourceAddress))[:longestSourceAddress])
 	for {
 		for _, pinger := range pingers {
 			if pinger.PacketsSent > 0 {
 				source := (pinger.Source + strings.Repeat(" ", longestSourceAddress))[:longestSourceAddress]
-				fmt.Printf("%v  %-3v   %6.2f%%  %-8v  %-8v  %-8v\n", source, pinger.PacketsSent, pinger.Statistics().PacketLoss, pinger.Statistics().MinRtt.Truncate(time.Microsecond), pinger.Statistics().MaxRtt.Truncate(time.Microsecond), pinger.Statistics().AvgRtt.Truncate(time.Microsecond))
+				fmt.Printf("%v  %-3v   %6.2f%%  %-8v  %-8v  %-8v  %-8v\n", source, pinger.PacketsSent, pinger.Statistics().PacketLoss, pinger.Statistics().MinRtt.Truncate(time.Microsecond), pinger.Statistics().MaxRtt.Truncate(time.Microsecond), pinger.Statistics().AvgRtt.Truncate(time.Microsecond), pinger.Statistics().StdDevRtt.Truncate(time.Microsecond))
 			}
 		}
 		time.Sleep(time.Second)
