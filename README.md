@@ -8,7 +8,7 @@ A small utility to test ICMP latency from multiple source IP simultaneously. Use
 
 ### Example
 ```
-~ » sudo stping -sources "2001:xxx:1:xxx::2,2a04:xxxx:2:xxxx::4,2001:6xx:xxx::1" -target he.net
+~ » sudo stping -s "2001:xxx:1:xxx::2,2a04:xxxx:2:xxxx::4,2001:6xx:xxx::1" -t he.net
 Resolving he.net...2001:470:0:503::2, 216.218.236.2
 STPING he.net (2001:470:0:503::2) from 3 sources:
 Source               Sent  Loss  Min       Max       Avg
@@ -40,9 +40,9 @@ stping is available as a debian package and x86 binary in the releases section o
 
 ### Usage
 ```
-Usage for stping (devel) https://github.com/natesales/stping:
-  -sources string
+Usage for stping https://github.com/natesales/stping:
+  -s string
         Comma separated list of source IP addresses
-  -target string
+  -t string
         Target hostname to ping
 ```

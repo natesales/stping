@@ -12,11 +12,11 @@ import (
 	"time"
 )
 
-var release = "devel" // Set by the build process
+var release = "" // Set by the build process
 
 var (
-	sources = flag.String("sources", "", "Comma separated list of source IP addresses")
-	target  = flag.String("target", "", "Target hostname to ping")
+	sources = flag.String("s", "", "Comma separated list of source IP addresses")
+	target  = flag.String("t", "", "Target hostname to ping")
 )
 
 func main() {

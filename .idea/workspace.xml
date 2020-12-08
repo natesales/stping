@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f594b4c6-e6c0-4051-9f95-886de8baaf9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <workItem from="1607112396260" duration="43000" />
       <workItem from="1607114889948" duration="1148000" />
       <workItem from="1607116399075" duration="1190000" />
-      <workItem from="1607117925094" duration="7034000" />
+      <workItem from="1607117925094" duration="8867000" />
     </task>
     <task id="LOCAL-00001" summary="init repo">
       <created>1607116463045</created>
@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607127202203</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add example to readme">
+      <created>1607127838393</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607127838393</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +131,8 @@
     <MESSAGE value="fix output whitespace" />
     <MESSAGE value="fix packet loss spacing" />
     <MESSAGE value="add standard deviation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add standard deviation" />
+    <MESSAGE value="add example to readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="add example to readme" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -138,18 +146,18 @@
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
     <state x="1051" y="574" width="400" height="325" key="#Go_Modules/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607044378958" />
-    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2" timestamp="1607127202168">
+    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2" timestamp="1607127838359">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
-    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607127202168" />
+    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607127838359" />
     <state x="3303" y="472" width="424" height="482" key="FileChooserDialogImpl" timestamp="1607059570218">
       <screen x="2560" y="174" width="1920" height="1080" />
     </state>
     <state x="3303" y="472" width="424" height="482" key="FileChooserDialogImpl/0.34.2560.1406/2560.174.1920.1080@2560.174.1920.1080" timestamp="1607059570218" />
-    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1607127210044">
+    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1607127839458">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
-    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607127210044" />
+    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607127839458" />
     <state x="1419" y="650" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607124601749">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
