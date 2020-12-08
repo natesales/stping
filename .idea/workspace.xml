@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f594b4c6-e6c0-4051-9f95-886de8baaf9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f594b4c6-e6c0-4051-9f95-886de8baaf9f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +51,7 @@
       <workItem from="1607114889948" duration="1148000" />
       <workItem from="1607116399075" duration="1190000" />
       <workItem from="1607117925094" duration="8867000" />
+      <workItem from="1607468379199" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="init repo">
       <created>1607116463045</created>
@@ -117,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607127838393</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="change flags">
+      <created>1607468427744</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607468427744</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +138,8 @@
     <MESSAGE value="fix packet loss spacing" />
     <MESSAGE value="add standard deviation" />
     <MESSAGE value="add example to readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="add example to readme" />
+    <MESSAGE value="change flags" />
+    <option name="LAST_COMMIT_MESSAGE" value="change flags" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -146,33 +153,33 @@
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
     <state x="1051" y="574" width="400" height="325" key="#Go_Modules/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607044378958" />
-    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2" timestamp="1607127838359">
+    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2" timestamp="1607468427699">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
-    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607127838359" />
+    <state x="853" y="247" width="844" height="977" key="CommitChangelistDialog2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607468427699" />
     <state x="3303" y="472" width="424" height="482" key="FileChooserDialogImpl" timestamp="1607059570218">
       <screen x="2560" y="174" width="1920" height="1080" />
     </state>
     <state x="3303" y="472" width="424" height="482" key="FileChooserDialogImpl/0.34.2560.1406/2560.174.1920.1080@2560.174.1920.1080" timestamp="1607059570218" />
-    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1607127839458">
+    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1607468442740">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
-    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607127839458" />
+    <state x="875" y="473" width="800" height="526" key="Vcs.Push.Dialog.v2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607468442740" />
     <state x="1419" y="650" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607124601749">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
     <state x="1419" y="650" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607124601749" />
-    <state x="1444" y="577" width="402" height="317" key="git4idea.ui.GitTagDialog" timestamp="1607127208373">
+    <state x="1444" y="577" width="402" height="317" key="git4idea.ui.GitTagDialog" timestamp="1607468440620">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
-    <state x="1444" y="577" width="402" height="317" key="git4idea.ui.GitTagDialog/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607127208373" />
+    <state x="1444" y="577" width="402" height="317" key="git4idea.ui.GitTagDialog/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607468440620" />
     <state x="944" y="346" key="run.anything.popup" timestamp="1607054693148">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
     <state x="944" y="346" key="run.anything.popup/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607054693148" />
-    <state x="993" y="422" width="672" height="678" key="search.everywhere.popup" timestamp="1607127204808">
+    <state x="993" y="422" width="672" height="678" key="search.everywhere.popup" timestamp="1607468429769">
       <screen x="0" y="34" width="2560" height="1406" />
     </state>
-    <state x="993" y="422" width="672" height="678" key="search.everywhere.popup/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607127204808" />
+    <state x="993" y="422" width="672" height="678" key="search.everywhere.popup/0.34.2560.1406/2560.174.1920.1080@0.34.2560.1406" timestamp="1607468429769" />
   </component>
 </project>

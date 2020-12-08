@@ -72,7 +72,7 @@ func main() {
 		pinger, err := ping.NewPinger(targetIp)
 		pinger.Source = address
 		if err != nil {
-			panic(err)
+			log.Fatalf("Creating pinger: %v", err)
 		}
 
 		// Add the pinger pointer to the array
@@ -94,7 +94,7 @@ func main() {
 		go func() {
 			err = pinger.Run()
 			if err != nil {
-				panic(err)
+				log.Fatalf("Running pinger: %v", err)
 			}
 		}()
 	}
