@@ -45,19 +45,23 @@ func main() {
 
 	var targetIp string
 
-	// If IPv6 source
-	if strings.Contains(*sources, ":") {
-		for _, addr := range targetHostRecords {
-			if strings.Contains(addr.String(), ":") {
-				targetIp = addr.String()
-				break
-			}
-		}
+	if len(targetHostRecordsStr) == 1 {
+		targetIp = targetHostRecordsStr[0]
 	} else {
-		for _, addr := range targetHostRecords {
-			if strings.Contains(addr.String(), ".") {
-				targetIp = addr.String()
-				break
+		// If IPv6 source
+		if strings.Contains(*sources, ":") {
+			for _, addr := range targetHostRecords {
+				if strings.Contains(addr.String(), ":") {
+					targetIp = addr.String()
+					break
+				}
+			}
+		} else {
+			for _, addr := range targetHostRecords {
+				if strings.Contains(addr.String(), ".") {
+					targetIp = addr.String()
+					break
+				}
 			}
 		}
 	}
