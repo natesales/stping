@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/natesales/stping?style=for-the-badge)](https://raw.githubusercontent.com/natesales/stping/main/LICENSE) 
 [![Release](https://img.shields.io/github/v/release/natesales/stping?style=for-the-badge)](https://github.com/natesales/stping/releases) 
 
-A small utility to test ICMP latency from multiple source IP simultaneously. Useful for troubleshooting issues 
+A small utility to test ICMP latency from multiple source IP simultaneously.
 
 ### Example
 ```
