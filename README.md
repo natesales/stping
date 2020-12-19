@@ -36,7 +36,7 @@ round-trip min/avg/max/stddev = 376.797µs/571.659µs/820.798µs/172.4µs
 ```
 
 ### Installation
-stping is available as a debian package and x86 binary in the releases section of this repo. It's also available as an APT package by adding `deb [trusted=yes] https://apt.fury.io/natesales/ /` to your `/etc/apt/source.list` file.
+This project is available in my public code repositories. See https://github.com/natesales/repo for more info.
 
 ### Usage
 ```
