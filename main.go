@@ -13,7 +13,7 @@ import (
 	"github.com/go-ping/ping"
 )
 
-var release = "" // Set by the build process
+var version = "" // Set by the build process
 
 var (
 	sources = flag.String("s", "", "Comma separated list of source IP addresses")
@@ -24,7 +24,7 @@ func main() {
 	flag.Parse()
 
 	flag.Usage = func() {
-		fmt.Printf("Usage for stping (%s) https://github.com/natesales/stping:\n", release)
+		fmt.Printf("Usage for stping (%s) https://github.com/natesales/stping:\n", version)
 		flag.PrintDefaults()
 	}
 
