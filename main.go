@@ -28,6 +28,7 @@ func main() {
 		flag.PrintDefaults()
 	}
 
+	// Check for empty flag values
 	if *sources == "" || *target == "" {
 		flag.Usage()
 		os.Exit(1)
@@ -46,6 +47,7 @@ func main() {
 
 	var targetIp string
 
+	// Parse A/AAAA records
 	if len(targetHostRecordsStr) == 1 {
 		targetIp = targetHostRecordsStr[0]
 	} else {
@@ -67,9 +69,13 @@ func main() {
 		}
 	}
 
+	// Keep track of the longest source address (string length) for printing
 	longestSourceAddress := 0
+
+	// Array of pingers
 	var pingers []*ping.Pinger
 
+	// Separate source addresses by comma
 	addresses := strings.Split(strings.ReplaceAll(*sources, " ", ""), ",")
 
 	for _, address := range addresses {
@@ -91,10 +97,6 @@ func main() {
 		// Enable privileged mode
 		pinger.SetPrivileged(true)
 
-		//table[&ip].OnRecv = func(pkt *ping.Packet) {
-		//	fmt.Printf("%d bytes from %s: icmp_seq=%d time=%v\n", pkt.Nbytes, pkt.IPAddr, pkt.Seq, pkt.Rtt)
-		//}
-
 		// Start a new pinger goroutine
 		go func() {
 			err = pinger.Run()
@@ -104,7 +106,7 @@ func main() {
 		}()
 	}
 
-	// Listen for Ctrl-C
+	// Listen for interrupt
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, os.Interrupt)
 	go func() {
@@ -120,6 +122,7 @@ func main() {
 		}
 	}()
 
+	// Print results
 	fmt.Printf("STPING %s (%s) from %d sources:\n", *target, targetIp, len(pingers))
 	fmt.Printf("%s  Sent     Loss  Min        Max        Avg        Dev\n", ("Source" + strings.Repeat(" ", longestSourceAddress))[:longestSourceAddress])
 	for {
@@ -129,6 +132,8 @@ func main() {
 				fmt.Printf("%v  %-3v   %6.2f%%  %-9v  %-9v  %-9v  %-9v\n", source, pinger.PacketsSent, pinger.Statistics().PacketLoss, pinger.Statistics().MinRtt.Truncate(time.Microsecond), pinger.Statistics().MaxRtt.Truncate(time.Microsecond), pinger.Statistics().AvgRtt.Truncate(time.Microsecond), pinger.Statistics().StdDevRtt.Truncate(time.Microsecond))
 			}
 		}
+
+		// Wait between displaying results
 		time.Sleep(time.Second)
 	}
 }
