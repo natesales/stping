@@ -3,13 +3,14 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/go-ping/ping"
 	"log"
 	"net"
 	"os"
 	"os/signal"
 	"strings"
 	"time"
+
+	"github.com/go-ping/ping"
 )
 
 var release = "" // Set by the build process
