@@ -41,8 +41,13 @@ This project is available in my public code repositories. See https://github.com
 ### Usage
 ```
 Usage for stping https://github.com/natesales/stping:
+  -T uint
+        Seconds to wait for a response (default 60)
+  -i uint
+        Seconds between pings (default 1)
   -s string
         Comma separated list of source IP addresses
   -t string
         Target hostname to ping
+  -u    Use UDP instead of ICMP
 ```

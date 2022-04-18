@@ -16,8 +16,11 @@ import (
 var version = "" // Set by the build process
 
 var (
-	sources = flag.String("s", "", "Comma separated list of source IP addresses")
-	target  = flag.String("t", "", "Target hostname to ping")
+	sources  = flag.String("s", "", "Comma separated list of source IP addresses")
+	target   = flag.String("t", "", "Target hostname to ping")
+	interval = flag.Uint("i", 1, "Seconds between pings")
+	timeout  = flag.Uint("T", 60, "Seconds to wait for a response")
+	udp      = flag.Bool("u", false, "Use UDP instead of ICMP")
 )
 
 func main() {
@@ -81,10 +84,12 @@ func main() {
 	for _, address := range addresses {
 		// Create pinger
 		pinger, err := ping.NewPinger(targetIp)
-		pinger.Source = address
 		if err != nil {
 			log.Fatalf("Creating pinger: %v", err)
 		}
+		pinger.Source = address
+		pinger.Interval = time.Duration(*interval) * time.Second
+		pinger.Timeout = time.Duration(*timeout) * time.Second
 
 		// Add the pinger pointer to the array
 		pingers = append(pingers, pinger)
@@ -95,7 +100,7 @@ func main() {
 		}
 
 		// Enable privileged mode
-		pinger.SetPrivileged(true)
+		pinger.SetPrivileged(*udp)
 
 		// Start a new pinger goroutine
 		go func() {
